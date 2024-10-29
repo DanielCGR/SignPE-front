@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Usuario</title>
+    <link rel="stylesheet" href="main.component.css"> <!-- Vincula el archivo CSS -->
+</head>
+
+<body>
+    <!-- Imagen y Datos del Usuario -->
+    <div class="user-info">
+        <img src="assets/images/subfolder/user-photo.jpg" alt="Foto de Usuario" class="user-photo"> <!-- Imagen de Usuario -->
+        <h2>Usuario: Juan Pérez</h2>
+        <p>Correo: juan.perezexample.com</p>
+    </div>
+
+    <div class="header">
+        <h1>Bienvenido al Panel de Usuario</h1>
+    </div>
+
+    <div class="container">
+        <!-- Panel de Historial de Actividad -->
+        <div class="activity-panel">
+            <h3>Historial de Actividad</h3>
+            <div class="activity-item">Actividad 1: Se registró el 01/01/2024</div>
+            <div class="activity-item">Actividad 2: Inició sesión el 02/01/2024</div>
+            <div class="activity-item">Actividad 3: Actualizó su perfil el 03/01/2024</div>
+            <div class="activity-item">Actividad 4: Cambió la contraseña el 04/01/2024</div>
+        </div>
+
+        <!-- Contenedor del Carrusel -->
+        <div class="carousel-container">
+            <!-- Carrusel -->
+            <div class="carousel">
+                <div class="carousel-slide active">
+                    <img src="assets/images/subfolder/image1.jpg" alt="Imagen 1">
+                    <h4>Slide 1</h4>
+                    <p>Descripción de la imagen 1.</p>
+                </div>
+                <div class="carousel-slide">
+                    <img src="assets/images/subfolder/image2.jpg" alt="Imagen 2">
+                    <h4>Slide 2</h4>
+                    <p>Descripción de la imagen 2.</p>
+                </div>
+                <div class="carousel-slide">
+                    <img src="assets/images/subfolder/image3.jpg" alt="Imagen 3">
+                    <h4>Slide 3</h4>
+                    <p>Descripción de la imagen 3.</p>
+                </div>
+                <button class="carousel-button" onclick="nextSlide()">Siguiente</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.carousel-slide');
+
+        function nextSlide() {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (currentSlide + 1) % slides.length;
+            slides[currentSlide].classList.add('active');
+        }
+    </script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+

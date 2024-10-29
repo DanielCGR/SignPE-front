@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Fondo gris claro */
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* Cambiado para que el header y el container se apilen verticalmente */
+}
+
+/* Encabezado del usuario */
+.header {
+    padding: 20px;
+    background-color: #007bff;
+    color: white;
+}
+
+/* Contenedor principal */
+.container {
+    display: flex;
+    flex: 1;
+    padding: 20px;
+}
+
+/* Panel de historial de actividad */
+.activity-panel {
+    flex: 1; /* Menos espacio en el panel */
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+}
+
+/* Contenedor del carrusel */
+.carousel-container {
+    display: flex;
+    justify-content: center; /* Centra el carrusel */
+    align-items: center; /* Alinea verticalmente el carrusel */
+    flex: 2; /* Más espacio para el carrusel */
+}
+
+/* Carrusel */
+.carousel {
+    width: 100%; /* El carrusel ocupa el 100% del contenedor */
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+/* Estilo del botón */
+.carousel-button {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Estilo para el historial de actividad */
+.activity-item {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.activity-item:last-child {
+    border-bottom: none;
+}
+
+/* Estilo para el carrusel */
+.carousel-slide {
+    display: none;
+    text-align: center;
+}
+
+.carousel-slide.active {
+    display: block; /* Solo muestra el slide activo */
+}
+
+/* Estilo para las imágenes en el carrusel */
+.carousel-slide img {
+    width: 100%; /* Imagen ocupa el 100% del ancho del slide */
+    height: auto; /* Mantiene la relación de aspecto */
+    border-radius: 8px; /* Bordes redondeados */
+}
+
+

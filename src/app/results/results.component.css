@@ -1,0 +1,79 @@
+body {
+  background-color: #f0f4f8; /* Color de fondo suave para toda la página */
+  font-family: 'Arial', sans-serif; /* Fuente moderna */
+  margin: 0; /* Sin margen en el body */
+  display: flex;
+  justify-content: center; /* Centrar contenido horizontalmente */
+  align-items: center; /* Centrar contenido verticalmente */
+  height: 100vh; /* Altura completa de la ventana */
+}
+
+.panel {
+  border-radius: 12px; /* Bordes redondeados */
+  max-width: 1000px; /* Aumentar el ancho máximo del panel */
+  width: 90%; /* Definir un ancho específico para el panel */
+  margin: 20px; 
+  padding: 40px; /* Espaciado interior ajustado */
+  background-color: #ffffff; /* Fondo blanco para el panel */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra más pronunciada */
+  transition: transform 0.3s; /* Transición suave para el efecto hover */
+}
+
+.panel:hover {
+  transform: translateY(-5px); /* Elevar el panel al pasar el mouse */
+}
+
+.row {
+  display: flex;
+  justify-content: flex-start; /* Alinear todo a la izquierda */
+  align-items: center; /* Alinear elementos verticalmente al centro */
+  margin-bottom: 1.5em; /* Mayor espacio entre filas */
+  padding: 10px 0; /* Mayor espacio en la parte superior e inferior de cada fila */
+  border-bottom: 1px solid #eaeaea; /* Línea de separación entre filas */
+}
+
+.row:last-child {
+  border-bottom: none; /* Quitar la línea en la última fila */
+}
+
+.row h2, .row p {
+  margin: 0; /* Eliminar márgenes de títulos y párrafos */
+}
+
+.row h2 {
+  font-size: 1.2em; /* Tamaño de fuente */
+  font-weight: bold; /* Fuente semi-negrita */
+  color: #333; /* Color oscuro para el texto */
+  flex: 0 0 120px; /* Ancho fijo para etiquetas */
+}
+
+.row p {
+  font-size: 1.1em; /* Tamaño de fuente */
+  color: #555; /* Color más suave para el texto */
+  flex: 1; /* Permitir más espacio para el contenido */
+}
+
+.checkbox {
+  width: 35px; /* Tamaño del checkbox */
+  height: 35px; /* Tamaño del checkbox */
+  border: 2px solid #007bff; /* Color del borde */
+  border-radius: 5px; /* Bordes redondeados */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.2em; /* Tamaño del texto en el checkbox */
+  transition: background-color 0.3s, transform 0.2s; /* Transiciones suaves */
+  cursor: pointer; /* Cambiar el cursor al pasar por encima */
+  margin-left: 20px; /* Espacio a la izquierda del checkbox */
+}
+
+.checkbox.aprobado {
+  color: green; /* Color del texto */
+}
+
+.checkbox:hover {
+  background-color: #cce5ff; /* Fondo azul claro al pasar el mouse */
+}
+
+
